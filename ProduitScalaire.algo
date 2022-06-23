@@ -1,0 +1,64 @@
+ALGORITHM algorithm_name
+VAR
+n,i,j:integer; 
+BEGIN
+PROCEDURE dot_product(List_parameters)
+VAR  v1,v2,ps:integer;
+
+    FOR i FROM 1 TO n STEP step  DO
+    write('donner n ');
+    read(n);
+    END_FOR
+
+    FOR i FROM 1 TO n STEP step  DO
+    write('donner v1 ');
+    read(v1);
+    END_FOR
+
+    FOR j FROM 1 TO n STEP step  DO
+    write('donner v2 ');
+    read(v2);
+    END_FOR
+
+    ps:=0;
+    FOR i FROM 1 TO n STEP step  DO
+        ps := ps+(v1[i]*v2[j])
+    END_FOR
+
+
+END
+
+write('me produit scalaire est',ps);
+
+
+
+
+
+FUNCTION dot_product(v1,v2,ps) : integer
+VAR  v1,v2,ps:integer;
+
+    FOR i FROM 1 TO n STEP step  DO
+    write('donner n ');
+    read(n);
+    END_FOR
+
+    FOR i FROM 1 TO n STEP step  DO
+    write('donner v1 ');
+    read(v1);
+    END_FOR
+
+    FOR j FROM 1 TO n STEP step  DO
+    write('donner v2 ');
+    read(v2);
+    END_FOR
+
+    ps:=0;
+    FOR i FROM 1 TO n STEP step  DO
+        ps := ps+(v1[i]*v2[j])
+    END_FOR
+    return ps ;
+END
+
+
+
+
